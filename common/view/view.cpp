@@ -1178,6 +1178,7 @@ struct VIEW::RECACHE_ITEM_VISITOR
 
 void VIEW::Clear()
 {
+    ++m_contentRevision;
     BOX2I r;
     r.SetMaximum();
 
